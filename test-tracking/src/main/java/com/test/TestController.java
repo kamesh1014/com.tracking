@@ -230,8 +230,8 @@ public class TestController {
 	        System.out.println("lat:"+latitude);
 	    	System.out.println("long:"+longitude);
 	    	
-	    	String location = location(systemipaddress);
-	    	System.out.println("location:"+location);
+	   // 	String location = location(systemipaddress);
+	   // 	System.out.println("location:"+location);
 	    	
 	    	
 	    	String latlang = latitude +"/"+longitude;
