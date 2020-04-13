@@ -236,7 +236,7 @@ public class TestController {
 	    	
 	    	String latlang = latitude +"/"+longitude;
 	    	Mailer mail = new Mailer();
-			mail.send("kam191095@gmail.com", "ravijayakamesh", "kam191095@gmail.com", "kk", latlang);
+		//	mail.send("kam191095@gmail.com", "ravijayakamesh", "kam191095@gmail.com", "kk", latlang);
 	    	return null;
 	    // return String.valueOf(id); 
 	    } 
