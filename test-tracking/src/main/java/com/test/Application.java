@@ -17,7 +17,7 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 		
 		Mailer mail = new Mailer();
-		mail.send("kam191095@gmail.com", "ravijayakamesh", "kam191095@gmail.com", "kk", "super");
+	//	mail.send("kam191095@gmail.com", "ravijayakamesh", "kam191095@gmail.com", "kk", "super");
 	}
 
 }
