@@ -220,8 +220,19 @@ public class TestController {
 	    public String getSearchResultViaAjax(@PathVariable(value = "latitude") String latitude,@PathVariable(value = "longitude") String longitude) 
 	    { 
 	    	
-	    	System.out.println("lat"+latitude);
-	    	System.out.println("long"+longitude);
+	    	String systemipaddress = ""; 
+	        systemipaddress = getIPAddress();
+	        String systemName = getSystemName();
+	        String systemMac = getMAC();
+	        System.out.println("systemipaddress:"+systemipaddress);
+	        System.out.println("systemName:"+systemName);
+	        System.out.println("systemMac:"+systemMac);
+	        System.out.println("lat:"+latitude);
+	    	System.out.println("long:"+longitude);
+	    	
+	    	String location = location(systemipaddress);
+	    	System.out.println("location:"+location);
+	    	
 	    	
 	    	String latlang = latitude +"/"+longitude;
 	    	Mailer mail = new Mailer();
