@@ -217,7 +217,7 @@ public class TestController {
 	    
 	    @ResponseBody 
 	    @RequestMapping(value = "/search/api/getSearchResult/{latitude}/{longitude}") 
-	    public String getSearchResultViaAjax(@PathVariable(value = "latitude") String latitude,@PathVariable(value = "longitude") String longitude) 
+	    public String getSearchResultViaAjax(@PathVariable(value = "latitude") String latitude,@PathVariable(value = "longitude") String longitude) throws IOException
 	    { 
 	    	
 	    	String systemipaddress = ""; 
